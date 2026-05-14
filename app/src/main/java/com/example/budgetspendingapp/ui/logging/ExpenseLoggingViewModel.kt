@@ -2,6 +2,7 @@ package com.example.budgetspendingapp.ui.logging
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.budgetspendingapp.domain.model.Category
 import com.example.budgetspendingapp.domain.model.Expense
 import com.example.budgetspendingapp.domain.repository.ExpenseRepository
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -17,7 +18,7 @@ class ExpenseLoggingViewModel(
     private val _amount = MutableStateFlow("")
     val amount: StateFlow<String> = _amount.asStateFlow()
 
-    private val _category = MutableStateFlow("General")
+    private val _category = MutableStateFlow(Category.GENERAL.displayName)
     val category: StateFlow<String> = _category.asStateFlow()
 
     private val _date = MutableStateFlow(LocalDate.now())

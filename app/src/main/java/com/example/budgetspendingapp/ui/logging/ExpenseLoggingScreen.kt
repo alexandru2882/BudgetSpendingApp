@@ -10,6 +10,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import com.example.budgetspendingapp.domain.model.Category
 import org.koin.androidx.compose.koinViewModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -90,7 +91,7 @@ fun ExpenseLoggingScreen(
             )
 
             var expanded by remember { mutableStateOf(false) }
-            val categories = listOf("General", "Food", "Transport", "Entertainment", "Shopping", "Bills")
+            val categories = Category.entries.map { it.displayName }
 
             ExposedDropdownMenuBox(
                 expanded = expanded,
