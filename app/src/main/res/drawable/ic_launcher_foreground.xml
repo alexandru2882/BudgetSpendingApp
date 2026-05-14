@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Coin (behind wallet) -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M54,36 A8,8 0 1,1 53.99,36 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,31 V41 M51,34 H57"
+        android:strokeWidth="1.2"
+        android:strokeColor="#FFFFFF" />
+
+    <!-- Wallet Body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,44 H78 C80.2,44 82,45.8 82,48 V72 C82,74.2 80.2,76 78,76 H30 C27.8,76 26,74.2 26,72 V48 C26,45.8 27.8,44 30,44 Z" />
+
+    <!-- Wallet Flap -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M66,50 H82 V68 H66 C63.8,68 62,66.2 62,64 V54 C62,51.8 63.8,50 66,50 Z" />
+
+    <!-- Wallet Snap/Button -->
+    <path
+        android:fillColor="#03DAC6"
+        android:pathData="M70,59 A3,3 0 1,1 69.99,59 Z" />
+</vector>

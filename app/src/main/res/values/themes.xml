@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.BudgetSpendingApp" parent="Theme.MaterialComponents.Light" />
+</resources>
